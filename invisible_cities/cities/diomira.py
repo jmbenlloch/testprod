@@ -24,6 +24,8 @@ processes the data in the same way as the detector and applies the same
 filters according to some predefined parameters.
 """
 
+# Irrelevant change
+
 from functools import partial
 
 import numpy  as np
