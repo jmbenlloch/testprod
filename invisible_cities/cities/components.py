@@ -507,7 +507,7 @@ def hit_builder(dbfile, run_number, drift_v, reco, rebin_slices, rebin_method):
                     clusters = reco(xys, qs)
                     es       = hif.split_energy(e_slice, clusters)
                     for c, e in zip(clusters, es):
-                        hit       = Hit(peak_no, c, z_slice, e, xy_peak)
+                        hit       = Hit(peak_no, c, z_slice, 2.5*e, xy_peak)
                         hitc.hits.append(hit)
                 except XYRecoFail:
                     hit = Hit(peak_no, empty_cluster(), z_slice, e_slice, xy_peak)
