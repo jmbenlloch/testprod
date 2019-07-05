@@ -25,6 +25,7 @@ filters according to some predefined parameters.
 """
 
 # Irrelevant change
+# Another irrelevant change
 
 from functools import partial
 
